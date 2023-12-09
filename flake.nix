@@ -75,6 +75,7 @@
             "-DCMAKE_C_FLAGS=-D__ARM_FEATURE_DOTPROD=1"
             "-DLLAMA_METAL=ON"
           ] else [
+            "-DLLAMA_METAL=OFF"
             "-DLLAMA_BLAS=ON"
             "-DLLAMA_BLAS_VENDOR=OpenBLAS"
           ]);
